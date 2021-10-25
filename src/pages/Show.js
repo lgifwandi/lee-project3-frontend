@@ -28,6 +28,8 @@ function Show(props) {
       <h3>{person.address}</h3>
       <h4>{person.contact}</h4>
       <h5>{person.email}</h5>
+      <p>{person.resume}</p>
+      <p>{person.coverLetter}</p>
       <button id="delete" onClick={removePerson}>
         DELETE
       </button>
@@ -58,6 +60,20 @@ function Show(props) {
           value={editForm.email}
           name="email"
           placeholder="email"
+          onChange={handleChange}
+        />
+        <input
+          type="text"
+          value={editForm.resume}
+          name="resume"
+          placeholder="resume"
+          onChange={handleChange}
+        />
+        <input
+          type="text"
+          value={editForm.coverLetter}
+          name="coverLetter"
+          placeholder="cover letter"
           onChange={handleChange}
         />
         <input type="submit" value="Update Person" />

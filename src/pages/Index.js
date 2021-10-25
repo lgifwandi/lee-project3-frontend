@@ -77,6 +77,20 @@ function Index(props) {
           placeholder="email"
           onChange={handleChange}
         />
+        <input
+          type="text"
+          value={newForm.resume}
+          name="resume"
+          placeholder="resume"
+          onChange={handleChange}
+        />
+        <input
+          type="text"
+          value={newForm.coverLetter}
+          name="coverLetter"
+          placeholder="cover letter"
+          onChange={handleChange}
+        />
         <input type="submit" value="New applicant" />
       </form>
       {props.job ? loaded() : loading()}
