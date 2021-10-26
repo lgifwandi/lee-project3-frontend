@@ -61,78 +61,7 @@ function Applicants(props) {
     <section>
       <form onSubmit={handleSubmit}>
         
-         {/* <label for="exampleInputName">Full Name</label>
-           <input 
-                type="text"
-                value={newForm.name} 
-                name="name"  
-                placeholder="Enter your name and surname" 
-                onChange={handleChange}
-            />
        
-            <label for="exampleInputEmail1">Email address</label>
-            <input 
-                type="email"
-                value={newForm.email} 
-                name="email"    
-                placeholder="Enter your email address"
-                onChange={handleChange}
-            />
-   
-            <label for="inputAddress">Address</label>
-            <input 
-                type="text"
-                value={newForm.address} 
-                name="address"   
-                placeholder="1234 Main St"
-                onChange={handleChange}
-            />
-      
-            <label for="inputCity">City</label>
-            <input 
-                type="text"
-                value={newForm.city} 
-                name="city"  
-                placeholder="Istanbul"
-                onChange={handleChange}
-            />
-        
-            <label for="inputZip">Zip</label>
-            <input 
-                type="text"
-                value={newForm.zip}  
-                name="zip"
-                placeholder="34000"
-                onChange={handleChange}
-            />
-       
-            <label for="example-tel-input">Telephone</label>
-            <input 
-                type="tel"
-                value={newForm.tel} 
-                name="tel" 
-                placeholder="1-555-555-5555" 
-                onChange={handleChange}
-            />
-       
-            <label for="example-date-input">Start Date</label>
-            <input
-                type="date"
-                value={newForm.starting_date}  
-                name="starting_date"    
-                onChange={handleChange}
-            />
-      
-            <label class="upload">Upload your resume:</label>
-            <input 
-                type="file"
-                value={newForm.file} 
-                name="file"
-                onChange={handleChange}
-            />
-      
-
-  <input type="submit" value="submit"/>*/}
       </form> 
       {props.job ? loaded() : loading()}
     </section>

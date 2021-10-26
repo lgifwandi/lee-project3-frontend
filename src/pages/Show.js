@@ -109,7 +109,7 @@ function Show(props) {
                 name="file"
                 onChange={handleChange}
             />
-      
+      <input type="submit" value="Update Info" />
       </form> 
     </div>
   )
