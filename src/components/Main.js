@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react"
 import { Route, Switch } from "react-router-dom"
+import Home from "../pages/Home"
 import Index from "../pages/Index"
 import Show from "../pages/Show"
+import Applicants from "../pages/Applicants"
 
 function Main(props) {
   const [ job, setJob ] = useState(null);
@@ -53,8 +55,12 @@ function Main(props) {
 
   return (
     <main>
-      <Switch>
+      <Switch> 
+        
         <Route exact path="/">
+          <Home/>
+        </Route>
+        <Route exact path="/applications">
           <Index job={job} createJob={createJob} />
         </Route>
         <Route
@@ -68,6 +74,14 @@ function Main(props) {
             />
           )}
         />
+        <Route exact path="/Applicants">
+          <Applicants job={job} createJob={createJob}/>
+        </Route>
+
+        
+       
+
+
       </Switch>
     </main>
   );

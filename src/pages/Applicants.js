@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
 
-function Index(props) {
+function Applicants(props) {
   // state to hold formData
   const [ newForm, setNewForm ] = useState({
     name: "",
@@ -139,4 +139,4 @@ function Index(props) {
   );
 }
 
-export default Index;
+export default Applicants;
