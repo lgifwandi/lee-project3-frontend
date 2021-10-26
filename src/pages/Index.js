@@ -36,26 +36,26 @@ function Index(props) {
   }
 
   // loaded function
-  const loaded = () => {
-    return props.job.map(person => (
-      <div key={person._id} className="person">
-        <Link to={`/job/${person._id}`}>
-          <h1>{person.name}</h1>
-        </Link>
-        <h3>{person.email}</h3>
-        <h4>{person.address}</h4>
-        <h5>{person.city}</h5>
-        <p>{person.zip}</p>
-        <p>{person.tel}</p>
-        <p>{person.starting_date}</p>
-        <p>{person.file}</p>
-      </div>
-    ));
-  }
+//   const loaded = () => {
+//     return props.job.map(person => (
+//       <div key={person._id} className="person">
+//         <Link to={`/job/${person._id}`}>
+//           <h1>{person.name}</h1>
+//         </Link>
+//         <h3>{person.email}</h3>
+//         <h4>{person.address}</h4>
+//         <h5>{person.city}</h5>
+//         <p>{person.zip}</p>
+//         <p>{person.tel}</p>
+//         <p>{person.starting_date}</p>
+//         <p>{person.file}</p>
+//       </div>
+//     ));
+//   }
 
-  const loading = () => {
-    return <h1>Loading...</h1>;
-  }
+//   const loading = () => {
+//     return <h1>Loading...</h1>;
+//   }
 
   return (
     <section>
@@ -134,7 +134,7 @@ function Index(props) {
 
       <input type="submit" value="submit"/>
       </form>
-      {props.job ? loaded() : loading()}
+      {/* {props.job ? loaded() : loading()} */}
     </section>
   );
 }

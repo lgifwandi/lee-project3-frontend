@@ -61,7 +61,7 @@ function Applicants(props) {
     <section>
       <form onSubmit={handleSubmit}>
         
-         <label for="exampleInputName">Full Name</label>
+         {/* <label for="exampleInputName">Full Name</label>
            <input 
                 type="text"
                 value={newForm.name} 
@@ -132,8 +132,8 @@ function Applicants(props) {
             />
       
 
-      <input type="submit" value="submit"/>
-      </form>
+  <input type="submit" value="submit"/>*/}
+      </form> 
       {props.job ? loaded() : loading()}
     </section>
   );

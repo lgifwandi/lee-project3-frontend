@@ -25,8 +25,8 @@ function Show(props) {
   return (
     <div className="person">
     
-    <p>Hello word</p>
-        {/* <h1>{person.name}</h1>
+    
+         <h1>{person.name}</h1>
         <h3>{person.email}</h3>
         <h4>{person.address}</h4>
         <h5>{person.city}</h5>
@@ -110,7 +110,7 @@ function Show(props) {
                 onChange={handleChange}
             />
       
-      </form> */}
+      </form> 
     </div>
   )
 }
