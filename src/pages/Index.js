@@ -1,5 +1,4 @@
 import { useState } from "react"
-import { Link } from "react-router-dom"
 
 function Index(props) {
   // state to hold formData
@@ -32,13 +31,14 @@ function Index(props) {
         tel: "",
         starting_date: "",
         file: "",
-    });
+      });
   }
 
   return (
     <section>
       <form onSubmit={handleSubmit}>
         
+      <div className="form-group">
          <label for="exampleInputName">Full Name</label>
            <input 
                 type="text"
@@ -47,7 +47,9 @@ function Index(props) {
                 placeholder="Enter your name and surname" 
                 onChange={handleChange}
             />
-       
+       </div>
+
+       <div className="form-group">
             <label for="exampleInputEmail1">Email address</label>
             <input 
                 type="email"
@@ -56,7 +58,9 @@ function Index(props) {
                 placeholder="Enter your email address"
                 onChange={handleChange}
             />
-   
+        </div>
+
+        <div className="form-group">
             <label for="inputAddress">Address</label>
             <input 
                 type="text"
@@ -65,7 +69,10 @@ function Index(props) {
                 placeholder="1234 Main St"
                 onChange={handleChange}
             />
-      
+        </div>
+
+        <div className="form-row">
+        <div className="form-group col-md-6">
             <label for="inputCity">City</label>
             <input 
                 type="text"
@@ -74,7 +81,9 @@ function Index(props) {
                 placeholder="Istanbul"
                 onChange={handleChange}
             />
-        
+            </div>
+            
+            <div className="form-group col-md-2"></div>
             <label for="inputZip">Zip</label>
             <input 
                 type="text"
@@ -83,7 +92,10 @@ function Index(props) {
                 placeholder="34000"
                 onChange={handleChange}
             />
-       
+
+          </div>
+          
+          <div className="form-group">
             <label for="example-tel-input">Telephone</label>
             <input 
                 type="tel"
@@ -92,7 +104,10 @@ function Index(props) {
                 placeholder="1-555-555-5555" 
                 onChange={handleChange}
             />
-       
+
+          </div>
+      
+          <div className="form-group">
             <label for="example-date-input">Start Date</label>
             <input
                 type="date"
@@ -100,17 +115,20 @@ function Index(props) {
                 name="starting_date"    
                 onChange={handleChange}
             />
-      
-            <label class="upload">Upload your resume:</label>
+           </div>
+            
+           <div className="form-group mt-3">
+            <label className="upload">Upload your resume:</label>
             <input 
                 type="file"
                 value={newForm.file} 
                 name="file"
                 onChange={handleChange}
             />
-      
+            </div>
 
-      <input type="submit" value="submit"/>
+      {/* <input type="submit" value="submit"/> */}
+      <button type="submit" className="btn btn-primary">Submit</button>
       </form>
       
     </section>

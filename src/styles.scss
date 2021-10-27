@@ -1,83 +1,73 @@
-// // --------------------------
-// // VARIABLES
-// // --------------------------
-// $maincolor: black;
-// $contrastcolor: white;
+body {
+    // margin: 0;
+    // padding: 0;
+    background: black;
+    color: white;
+  }
+  
+  nav {
+    
+    z-index: 9999;
+    width: 100%;
+    height: 35px;
+  }
+  
 
-// @mixin white-text-black-bg {
-//   color: $contrastcolor;
-//   background-color: $maincolor;
-// }
-
-// @mixin black-test-white-bg {
-//   color: $maincolor;
-//   background-color: $contrastcolor;
-// }
-
-// // --------------------------
-// // Header
-// // --------------------------
-
-// nav {
-// //   @include white-text-black-bg;
-//   display: flex;
-//   justify-content: center;
-
-//   a {
-//     // @include white-text-black-bg;
-//     div {
-//       margin: 10px;
-//       font-size: large;
-//     }
-//   }
-// }
-
-// // --------------------------
-// // Form
-// // --------------------------
-
-// section,
-// div {
-//   form {
-//     input {
-//     //   @include white-text-black-bg;
-//       display: flex;
-//       border: 1px solid #ccc;
-//       border-radius: 5px;
-//       padding: 20px;
-//       margin: 20px 0;
-//       font-family: 'Oswald';
-//       font-weight: 500;
-      
-//       box-sizing: border-box;
-//       border-radius: 5px;
-//       background: burlywood;
-
-//       &[type="submit"]:hover {
-//         // @include black-test-white-bg;
-//         cursor: pointer;
-//       }
-//     }
-//   }
-// }
-// .ckeckboxButton{
-//     display:flex;
-//     align-items: center;
-// }
-
-// // .checkboxButton{
-// //     display:inline-block;
-// // }
-// // --------------------------
-// // button
-// // --------------------------
-
-// button#delete {
-// //   @include white-text-black-bg;
-//   display: block;
-//   margin: auto;
-//   font-size: 1.3em;
-//   padding: 10px;
-//   background-color: red;
-// }
-
+  nav a {
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    font-family: Ubuntu;
+    font-size: 1.15em;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    transition: .25s ease-in-out;
+  }
+  
+  nav a:hover {
+    color: rgb(220, 120, 0);
+  }
+  
+  .nav-bg {
+    
+    
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    
+    background: rgb(50, 50, 50);
+    transition: .45s ease-in-out;
+  }
+  .header-inner{
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  input {
+   padding: 10px;
+   margin: 10px;
+   width: 300px;
+  }
+  .hero {
+    position: relative;
+    color:#DC6711;
+    width: 100%;
+    height: 500px;
+    background: rgb(50, 50, 50);
+    background: url(https://i.imgur.com/mvlUmLH.jpg) no-repeat 50% 50% fixed;
+    background-size: 130%;
+    overflow: hidden;
+  }
+  
+  .hero p {
+    position: absolute;
+    top: 2%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    padding: .3em;
+    font-size: 3em;
+    font-weight: lighter;
+  }
+  

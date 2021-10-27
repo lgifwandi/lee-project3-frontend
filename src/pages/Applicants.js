@@ -14,11 +14,6 @@ function Applicants(props) {
     file: "",
   });
 
-  // handleChange function for form
-  const handleChange = event => {
-    setNewForm({ ...newForm, [event.target.name]: event.target.value });
-  }
-
   // handle submit function for form
   const handleSubmit = event => {
     event.preventDefault();
@@ -44,7 +39,7 @@ function Applicants(props) {
         </Link>
         <h3>{person.email}</h3>
         <h4>{person.address}</h4>
-        <h5>{person.city}</h5>
+        <h6>{person.city}</h6>
         <p>{person.zip}</p>
         <p>{person.tel}</p>
         <p>{person.starting_date}</p>

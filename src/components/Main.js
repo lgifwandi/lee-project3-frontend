@@ -17,6 +17,7 @@ function Main(props) {
   }
 
   const createJob = async person => {
+    console.log(person)
     // make post request to create job
     await fetch(URL, {
       method: "POST",

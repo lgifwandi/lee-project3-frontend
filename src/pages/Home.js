@@ -1,8 +1,8 @@
 function Home(){
 return(
-<div>
+<div class="hero">
 
-    <p>Welcome to Eze Way Trucking </p>
+    <p>WELCOME</p>
 </div>
 
 )

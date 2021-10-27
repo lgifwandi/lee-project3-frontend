@@ -40,7 +40,8 @@ function Show(props) {
       <form onSubmit={handleSubmit}>
         
     
-           <label for="exampleInputName">Full Name</label>
+      <div className="form-group">
+         <label for="exampleInputName">Full Name</label>
            <input 
                 type="text"
                 value={editForm.name} 
@@ -48,7 +49,9 @@ function Show(props) {
                 placeholder="Enter your name and surname" 
                 onChange={handleChange}
             />
-       
+       </div>
+
+       <div className="form-group">
             <label for="exampleInputEmail1">Email address</label>
             <input 
                 type="email"
@@ -57,7 +60,9 @@ function Show(props) {
                 placeholder="Enter your email address"
                 onChange={handleChange}
             />
-   
+        </div>
+
+        <div className="form-group">
             <label for="inputAddress">Address</label>
             <input 
                 type="text"
@@ -66,7 +71,10 @@ function Show(props) {
                 placeholder="1234 Main St"
                 onChange={handleChange}
             />
-      
+        </div>
+
+        
+        <div className="form-group">
             <label for="inputCity">City</label>
             <input 
                 type="text"
@@ -75,7 +83,9 @@ function Show(props) {
                 placeholder="Istanbul"
                 onChange={handleChange}
             />
-        
+            
+            
+            <div className="form-group"></div>
             <label for="inputZip">Zip</label>
             <input 
                 type="text"
@@ -84,7 +94,10 @@ function Show(props) {
                 placeholder="34000"
                 onChange={handleChange}
             />
-       
+
+          </div>
+          
+          <div className="form-group">
             <label for="example-tel-input">Telephone</label>
             <input 
                 type="tel"
@@ -93,7 +106,10 @@ function Show(props) {
                 placeholder="1-555-555-5555" 
                 onChange={handleChange}
             />
-       
+
+          </div>
+      
+          <div className="form-group">
             <label for="example-date-input">Start Date</label>
             <input
                 type="date"
@@ -101,14 +117,17 @@ function Show(props) {
                 name="starting_date"    
                 onChange={handleChange}
             />
-      
-            <label class="upload">Upload your resume:</label>
+           </div>
+            
+           <div className="form-group">
+            <label className="upload">Upload your resume:</label>
             <input 
                 type="file"
                 value={editForm.file} 
                 name="file"
                 onChange={handleChange}
             />
+            </div>
       <input type="submit" value="Update Info" />
       </form> 
     </div>
