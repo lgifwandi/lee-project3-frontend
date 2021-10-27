@@ -27,8 +27,8 @@ Getting Started
 
 Unsolved Problems
 --------------------------------------------------------------------------------
-It doesn't dislay all the entries.
+It doesn't display all the entries.
 
 Future Enhancements
 -------------------------------------------------------------------------------
-I want to be able to include admin features and the ability of a user to log in & log out.I wsano to make it a full CRUD Data Operations.
+I want to be able to include admin features and the ability of a user to log in & log out.I want to make it a full CRUD Data Operations.
