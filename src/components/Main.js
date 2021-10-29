@@ -75,7 +75,7 @@ function Main(props) {
             />
           )}
         />
-        <Route exact path="/Applicants">
+        <Route exact path="/applicants">
           <Applicants job={job} createJob={createJob}/>
         </Route>
 

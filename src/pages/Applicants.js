@@ -38,8 +38,8 @@ function Applicants(props) {
           <h1>{person.name}</h1>
         </Link>
         <h3>{person.email}</h3>
-        <h4>{person.address}</h4>
-        <h6>{person.city}</h6>
+        <h4>{person.address}</h4> 
+         <h6>{person.city}</h6>
         <p>{person.zip}</p>
         <p>{person.tel}</p>
         <p>{person.starting_date}</p>
