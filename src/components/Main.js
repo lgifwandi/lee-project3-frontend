@@ -8,7 +8,7 @@ import Applicants from "../pages/Applicants"
 function Main(props) {
   const [ job, setJob ] = useState(null);
 
-  const URL = "http://localhost:4000/job/";
+  const URL = "https://lee-project3-backend.herokuapp.com//job/";
 
   const getJob = async () => {
     const response = await fetch(URL);
